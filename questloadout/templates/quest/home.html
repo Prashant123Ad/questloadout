@@ -1,0 +1,106 @@
+{% extends "quest/main.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" aria-label="Gaming Product Carousel">
+    <div class="carousel-inner">
+        <!-- Carousel Item 1 -->
+        <div class="carousel-item active">
+            <img src="{% static 'quest/images/b1.jpg' %}" class="d-block w-100" alt="Banner showcasing gaming gear">
+        </div>
+        <!-- Carousel Item 2 -->
+        <div class="carousel-item">
+            <img src="{% static 'quest/images/b2.jpg' %}" class="d-block w-100" alt="Special discounts on gaming laptops">
+        </div>
+        <!-- Carousel Item 3 -->
+        <div class="carousel-item">
+            <img src="{% static 'quest/images/b3.jpg' %}" class="d-block w-100" alt="Latest gaming accessories available now">
+        </div>
+    </div>
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Previous Slide">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Next Slide">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+{% endblock banner-slider %}
+{% block information %}
+<div class="container my-5">
+    <h2 class="text-center text-success fw-bold mb-4">About QuestLoadOut</h2>
+    <p class="text-center text-muted">
+        <span class="fw-semibold">QuestLoadOut</span> is your ultimate destination for high-performance gaming gear. 
+        We offer a premium selection of gaming laptops, keyboards, mice, headsets, monitors, and consoles—carefully 
+        curated to enhance your gaming experience. Whether you're a casual gamer or a pro, QuestLoadOut provides 
+        top-tier products that combine cutting-edge technology with unbeatable durability.
+    </p>
+</div>
+{% endblock information %}
+{% block main-content %}
+<div class="container my-5">
+    <h2 class="text-center text-success fw-bold mb-4">Our Products at OuestLoadOut</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Product 1 -->
+        <div class="col">
+            <div class="card shadow-sm border-success">
+                <img src="{% static 'quest/images/case.jpg' %}" class="card-img-top" alt="Desktop Case" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Desktop Case</h5>
+                    <a href="{%url 'category' 'GC' %}" class="btn btn-success w-100">View Product</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col">
+            <div class="card shadow-sm border-success">
+                <img src="{% static 'quest/images/headphone.jpg' %}" class="card-img-top" alt="Gaming Headphone" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Gaming Headphone</h5>
+                    <a href="{%url 'category' 'GH' %}" class="btn btn-success w-100">View Product</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col">
+            <div class="card shadow-sm border-success">
+                <img src="{% static 'quest/images/keyboard.jpg' %}" class="card-img-top" alt="Gaming Keyboard" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Gaming Keyboard</h5>
+                    <a href="{%url 'category' 'GK' %}" class="btn btn-success w-100">View Product</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col">
+            <div class="card shadow-sm border-success">
+                <img src="{% static 'quest/images/laptop.jpg' %}" class="card-img-top" alt="Gaming Laptop" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Gaming Laptop</h5>
+                    <a href="{%url 'category' 'GL' %}" class="btn btn-success w-100">View Product</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="col">
+            <div class="card shadow-sm border-success">
+                <img src="{% static 'quest/images/mouse.jpg' %}" class="card-img-top" alt="Gaming Mouse" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Gaming Mouse</h5>
+                    <a href="{%url 'category' 'GMk' %}" class="btn btn-success w-100">View Product</a>
+                </div>
+            </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="col">
+            <div class="card shadow-sm border-success">
+                <img src="{% static 'quest/images/playstation.jpg' %}" class="card-img-top" alt="Playstation" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">Playstation</h5>
+                    <a href="{%url 'category' 'GC' %}" class="btn btn-success w-100">View Product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}

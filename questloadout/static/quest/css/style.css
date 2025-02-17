@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Carousel */
+.carousel-inner img {
+    height: 60vh; /* Adjusts the height of the carousel images */
+    object-fit: contain;
+    width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #28a745; /* Green control icons */
+}
+
+/* Banner Text */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+/* Product Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #28a745;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Adds hover effect for cards */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-body .btn {
+    background-color: #28a745;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Section Titles */
+h2.text-center {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Information Section */
+.text-muted {
+    color: #6c757d;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+    .carousel-inner img {
+        height: 50vh; /* Reduce the carousel height on mobile */
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Hover Effects */
+.hover-shadow:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Navbar Styling */
+.navbar {
+    padding-top: 1px; /* Reduce the top padding */
+    padding-bottom: 1px; /* Reduce the bottom padding */
+    font-size: 1.0rem; /* Reduce the font size */
+    height: 70px;
+    background-color: rgba(40, 167, 69, 0.8);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #28a745;
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+    padding: 8px 15px;
+    font-size: 1.0rem;
+    color: #6c757d; /* Default color */
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: black; /* Change to black for active link */
+    font-weight: bold; /* Optional: Make active link bold */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #218838; /* Darker green color on hover */
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+    padding: 0.25rem 0.75rem; /* Adjust padding for smaller toggle button */
+}
+
+/* Dropdown Menu */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    font-size: 1.0rem; /* Reduce the font size for dropdown menu items */
+    padding: 10px 0;
+}
+
+/* Search Bar */
+.form-control {
+    height: 30px; /* Make the search bar shorter */
+    padding: 5px 10px;
+    font-size: 1.0rem;
+}
+
+/* User Dropdown */
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    font-size: 1.0rem; /* Smaller font size for dropdown items */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
